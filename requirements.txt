@@ -1,0 +1,3 @@
+robotframework==7.1.1
+robotframework-SeleniumLibrary==6.3.0
+robotframework-debuglibrary==2.5.0
