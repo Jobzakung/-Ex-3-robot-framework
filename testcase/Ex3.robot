@@ -1,6 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    DebugLibrary
+suite teardown   Close All Browsers
 
 *** Variables ***
 ${URL}    https://www.bewellstyle.com/
@@ -50,10 +51,7 @@ Ex3
     Click back to shopping
     Search item    ${item3}
     Click Element  xpath=//select[@id='%e0%b8%aa%e0%b8%b5']
-    Debug
     Click Element  xpath=//*[@id="%e0%b8%aa%e0%b8%b5"]/option[2]
-    # Click Element  xpath=//option[@class='attached enabled' and text()="${COLOR_BLUE2}"]
     Click Element  xpath=//select[@id='%e0%b8%82%e0%b8%99%e0%b8%b2%e0%b8%94']
     Click Element  xpath=//*[@id="%e0%b8%82%e0%b8%99%e0%b8%b2%e0%b8%94"]/option[3]
-    # Click Element  xpath=//option[@class='attached enabled' and text()='${size}']
     add to cart
